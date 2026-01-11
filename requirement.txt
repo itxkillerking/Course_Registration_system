@@ -1,0 +1,7 @@
+Django
+scikit-learn
+pandas
+numpy
+joblib
+django-crispy-forms
+Pillow
