@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ course.title }} - Details</title>
+  <style>
+    /* Import Poppins font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    /* Body & Background */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+      position: relative;
+    }
+
+    /* Dark overlay for contrast */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+      z-index: -1;
+    }
+
+    /* Glass Container */
+    .course-detail {
+      max-width: 800px;
+      width: 100%;
+      padding: 40px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(25px) saturate(180%);
+      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+      color: #fff;
+      animation: fadeIn 0.8s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Title */
+    .course-detail h2 {
+      font-size: 34px;
+      margin-bottom: 25px;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Modern Description */
+    .course-detail p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 15px 0;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px 18px;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .course-detail p:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #ffdd59;
+    }
+
+    /* Enroll Button */
+    .enroll-btn {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(135deg, #007aff, #00c6ff);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .enroll-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    /* Back Link */
+    .back-link {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #00c6ff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      color: #007aff;
+      text-shadow: 0 0 8px rgba(0,198,255,0.5);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="course-detail">
+    <h2>{{ course.title }}</h2>
+
+    <p><span class="highlight">Category:</span> {{ course.category }}</p>
+    <p><span class="highlight">Level:</span> {{ course.level }}</p>
+    <p><span class="highlight">Duration:</span> {{ course.duration }}</p>
+    <p><span class="highlight">Instructor:</span> {{ course.instructor }}</p>
+    <p><span class="highlight">Price:</span> {{ course.price }}</p>
+    <p><span class="highlight">Language:</span> {{ course.language }}</p>
+    <p><span class="highlight">Grade:</span> {{ course.grade }}</p>
+
+    <form method="POST" action="{% url 'enroll_course' course.id %}">
+      {% csrf_token %}
+      <button type="submit" class="enroll-btn">🚀 Enroll Now</button>
+    </form>
+
+    <a href="{% url 'all_courses' %}" class="back-link">← Back to Courses</a>
+  </div>
+</body>
+</html>

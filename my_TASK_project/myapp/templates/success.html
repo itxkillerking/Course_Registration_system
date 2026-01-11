@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Welcome</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg,#6a11cb,#2575fc);
+      min-height: 100vh;
+      padding: 40px;
+      color: #fff;
+    }
+
+    h2 { 
+      text-align:center; 
+      margin-bottom: 25px;
+      font-size: 2.2rem;
+      text-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    /* Profile Box - iOS 26 Glass Style */
+    .profile-box {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      padding: 30px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(25px) saturate(180%);
+      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+      color: #fff;
+      animation: fadeIn 0.8s ease-in-out;
+      overflow: hidden;
+    }
+
+    .profile-box h3 {
+      margin-bottom: 20px; 
+      text-align: center; 
+      font-size: 1.8rem;
+      text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Original Read-Only Style */
+    .profile-info p {
+      font-size: 1.1rem;
+      padding: 10px 15px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.05);
+      transition: all 0.3s ease;
+      margin: 0; 
+    }
+
+    .profile-info p:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* --- Input Style matching Glass Design --- */
+    .glass-input, .glass-select {
+        width: 100%;
+        box-sizing: border-box; 
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background: rgba(255,255,255,0.05); 
+        border: 1px solid transparent;
+        color: #fff;
+        outline: none;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    
+    .glass-input::placeholder {
+        color: rgba(255,255,255,0.6);
+    }
+
+    .glass-input:focus, .glass-select:focus {
+        background: rgba(255,255,255,0.15);
+        border: 1px solid rgba(255,255,255,0.3);
+        transform: translateY(-2px);
+    }
+
+    .glass-select option {
+        background: #333; 
+        color: #fff;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #ffdd59;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Recommended Courses Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 18px;
+      max-width: 1100px;
+      margin: 0 auto 20px;
+    }
+
+    .course-card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      text-align:center;
+      transition: transform .18s ease, box-shadow .18s ease;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.25);
+    }
+
+    .course-card a {
+      color: inherit;
+      text-decoration: none;
+      display:block;
+      font-weight:700;
+      font-size:1.05rem;
+    }
+
+    .course-card:hover { 
+      transform: translateY(-6px); 
+      box-shadow: 0 12px 40px rgba(0,0,0,0.36); 
+    }
+
+    /* Button */
+    .btn {
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:25px;
+      background: linear-gradient(135deg,#ff6ec7,#42d9f5);
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      margin: 0 auto;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    .center { text-align:center; margin-top:16px; }
+
+    a.logout-link {
+      color: rgba(255,255,255,0.9);
+      transition: 0.3s;
+    }
+
+    a.logout-link:hover {
+      color: #00c6ff;
+      text-shadow: 0 0 8px rgba(0,198,255,0.5);
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome, {{ user.username }} 🎉</h2>
+
+  <div class="profile-box">
+    {% if profile_filled %}
+        <h3>Your Profile</h3>
+        <div class="profile-info">
+          <p><span class="highlight">Email:</span> {{ user.email }}</p>
+          <p><span class="highlight">Phone:</span> {{ user.phone_number }}</p>
+          <p><span class="highlight">Country:</span> {{ user.country }}</p>
+          <p><span class="highlight">City:</span> {{ user.city }}</p>
+          <p><span class="highlight">Skill Level:</span> {{ user.skill_level }}</p>
+          <p><span class="highlight">Math Score:</span> {{ user.math_score }}</p>
+          <p><span class="highlight">Programming Score:</span> {{ user.programming_score }}</p>
+          <p><span class="highlight">Field of Study:</span> {{ user.field_of_study }}</p>
+          <p><span class="highlight">Address:</span> {{ user.address }}</p>
+          <p><span class="highlight">Interest:</span> {{ user.interest|default:"Not Selected" }}</p>
+        </div>
+
+    {% else %}
+        <h3>Complete Your Profile</h3>
+        <form method="POST" action="{% url 'success' %}" class="profile-info">
+            {% csrf_token %}
+            
+            <p><span class="highlight">Email:</span> {{ user.email }}</p>
+
+            <div class="input-group">
+                <input type="text" name="phone_number" class="glass-input" placeholder="Enter Phone Number" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="country" class="glass-input" placeholder="Enter Country" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="city" class="glass-input" placeholder="Enter City" required>
+            </div>
+
+            <div class="input-group">
+                <select name="skill_level" class="glass-select" required>
+                    <option value="" disabled selected>Select Skill Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Expert">Expert</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="number" name="math_score" class="glass-input" placeholder="Math Score (0-100)" required>
+            </div>
+
+            <div class="input-group">
+                <input type="number" name="programming_score" class="glass-input" placeholder="Programming Score (0-100)" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="field_of_study" class="glass-input" placeholder="Field of Study (e.g. BSCS)" required>
+            </div>
+            
+            <div class="input-group">
+                <select name="interest" class="glass-select" required>
+                    <option value="" disabled selected>Select Interest</option>
+                    <option value="AI">AI</option>
+                    <option value="Web">Web Development</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="address" class="glass-input" placeholder="Enter Address" required>
+            </div>
+
+            <div style="text-align:center; margin-top:10px;">
+                <button type="submit" class="btn">Save Profile</button>
+            </div>
+        </form>
+    {% endif %}
+  </div>
+
+  <h3 style="text-align:center;">Top 8 Recommended Courses</h3>
+  <div class="grid">
+    {% if recommended_courses %}
+      {% for course in recommended_courses %}
+        {% if course and course.id %}
+          <div class="course-card">
+            <a href="{% url 'course_detail' course.id %}">{{ course.title }}</a>
+            <div style="font-size:0.9rem; margin-top:8px; color:rgba(255,255,255,0.9)">
+              {{ course.category }} • {{ course.level }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <p style="grid-column: 1 / -1; text-align:center; color: rgba(255,255,255,0.95);">
+        {% if profile_filled %}
+            Calculating recommendations based on your profile...
+        {% else %}
+            Please complete your profile above to see personalized recommendations.
+        {% endif %}
+      </p>
+    {% endif %}
+  </div>
+
+  <div class="center">
+    <a class="btn" href="{% url 'all_courses' %}">View All Courses</a>
+  </div>
+
+  <div style="text-align:center; margin-top:18px;">
+    <a href="{% url 'logout' %}" class="logout-link">Logout</a>
+  </div>
+
+  <script>
+    let greetingPlayed = sessionStorage.getItem('greetingPlayed');
+
+    function speakGreeting() {
+      if (greetingPlayed) return; 
+
+      const username = "{{ user.username }}";
+      const isProfileFilled = "{{ profile_filled }}" === "True";
+      
+      let text = `Dear ${username}, welcome back.`;
+      if (!isProfileFilled) {
+          text += " Please complete your profile details to get course recommendations.";
+      } else {
+          text += " You have some recommended courses and more options to explore.";
+      }
+
+      const msg = new SpeechSynthesisUtterance(text);
+      msg.rate = 1;
+      msg.pitch = 1.2;
+      msg.volume = 1;
+
+      function trySpeak() {
+        const voices = speechSynthesis.getVoices();
+        if (voices.length > 0) {
+          const femaleVoice = voices.find(v => 
+            v.name.toLowerCase().includes("female") ||
+            v.name.toLowerCase().includes("zira") ||
+            v.name.toLowerCase().includes("samantha")
+          );
+          if (femaleVoice) msg.voice = femaleVoice;
+          else msg.voice = voices[0];
+
+          speechSynthesis.cancel();
+          speechSynthesis.speak(msg);
+          sessionStorage.setItem('greetingPlayed', 'true');
+        } else {
+          setTimeout(trySpeak, 100);
+        }
+      }
+
+      trySpeak();
+    }
+
+    function initGreeting() {
+      if (!greetingPlayed) {
+        document.body.addEventListener('click', speakGreeting, { once: true });
+        document.body.addEventListener('keydown', speakGreeting, { once: true });
+        document.body.addEventListener('touchstart', speakGreeting, { once: true });
+      }
+    }
+
+    window.onload = initGreeting;
+
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = () => {};
+    }
+  </script>
+
+</body>
+</html>

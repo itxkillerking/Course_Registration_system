@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECS Education - LMS</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://picsum.photos/1600/900') no-repeat center center/cover;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      z-index: -1;
+    }
+    .glass-card {
+      width: 90%; max-width: 380px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 35px 25px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      color: #fff;
+    }
+    .glass-card h2 { margin-bottom: 8px; font-size: 24px; font-weight: bold; }
+    .glass-card p { font-size: 14px; margin-bottom: 25px; color: #eee; }
+    .glass-card input {
+      width: 100%; padding: 12px; margin: 10px 0;
+      border: none; border-radius: 8px;
+      outline: none;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+    .glass-card input::placeholder { color: #ddd; }
+    .glass-card button {
+      width: 100%; padding: 12px; margin-top: 15px;
+      background: linear-gradient(135deg, #ff6600, #e05500);
+      border: none; border-radius: 8px;
+      color: white; font-size: 16px;
+      cursor: pointer; transition: 0.3s;
+    }
+    .glass-card button:hover { opacity: 0.9; transform: scale(1.02); }
+    .glass-card a {
+      display: block; margin-top: 12px;
+      color: #ddd; font-size: 13px; text-decoration: none;
+      transition: 0.3s;
+    }
+    .glass-card a:hover { text-decoration: underline; }
+    @media (max-width: 500px) {
+      .glass-card { padding: 25px 18px; }
+      .glass-card h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <h2>ECS Education</h2>
+    <p>Learning Management System</p>
+
+    <!-- Django login form -->
+    <form method="POST" action="{% url 'login' %}">
+      {% csrf_token %}
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <a href="#">Forgot Password?</a>
+      <a href="{% url 'register' %}">Sign Up</a>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Your Interest</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://picsum.photos/1600/900') no-repeat center center/cover;
+    overflow: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);
+    z-index: -1;
+  }
+
+  .glass-card {
+    width: 90%; max-width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+  }
+
+  .glass-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(5px);
+  }
+
+  select option {
+    color: #000;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #28a745, #1d7d32);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: linear-gradient(135deg, #1fae38, #166b23);
+    transform: scale(1.02);
+  }
+
+  @media (max-width: 500px) {
+    .glass-card { padding: 25px 18px; }
+    .glass-card h2 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+  <div class="glass-card">
+    <h2>Choose Your Field of Interest</h2>
+    <form method="POST">
+      {% csrf_token %}
+      <select name="interest" required>
+        <option value="" disabled selected>Select your interest</option>
+        <option value="AI">AI</option>
+        <option value="Software">Software</option>
+        <option value="Others">Others</option>
+      </select>
+      <button type="submit">Save Interest</button>
+    </form>
+  </div>
+</body>
+</html>

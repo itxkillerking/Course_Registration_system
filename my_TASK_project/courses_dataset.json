@@ -1,0 +1,702 @@
+[
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Introduction to Python Programming",
+      "category": "Machine Learning",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Introduction to Python Programming. It covers all the key concepts and hands-on projects.",
+      "duration": "10 weeks",
+      "instructor": "Olivia Taylor",
+      "price": "107.35",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Python for Data Science",
+      "category": "Cybersecurity",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Python for Data Science. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "Emma White",
+      "price": "91.41",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Machine Learning with Python",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Machine Learning with Python. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "Michael Brown",
+      "price": "222.78",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Deep Learning with TensorFlow",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Deep Learning with TensorFlow. It covers all the key concepts and hands-on projects.",
+      "duration": "12 weeks",
+      "instructor": "Michael Brown",
+      "price": "279.69",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Computer Vision Essentials",
+      "category": "Web Development",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Computer Vision Essentials. It covers all the key concepts and hands-on projects.",
+      "duration": "4 weeks",
+      "instructor": "Michael Brown",
+      "price": "189.38",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Natural Language Processing Fundamentals",
+      "category": "AI",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Natural Language Processing Fundamentals. It covers all the key concepts and hands-on projects.",
+      "duration": "9 weeks",
+      "instructor": "Emily Johnson",
+      "price": "217.88",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Reinforcement Learning Basics",
+      "category": "Cloud",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Reinforcement Learning Basics. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "James Anderson",
+      "price": "245.95",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Data Analysis with Pandas",
+      "category": "Blockchain",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Data Analysis with Pandas. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Emma White",
+      "price": "118.78",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Statistics for Data Science",
+      "category": "Machine Learning",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Statistics for Data Science. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "Sophia Davis",
+      "price": "93.19",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "SQL for Data Analysis",
+      "category": "UI/UX",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on SQL for Data Analysis. It covers all the key concepts and hands-on projects.",
+      "duration": "7 weeks",
+      "instructor": "Emma White",
+      "price": "107.2",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Big Data with Apache Spark",
+      "category": "Machine Learning",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Big Data with Apache Spark. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "Daniel Wilson",
+      "price": "63.75",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Introduction to Cloud Computing",
+      "category": "Cybersecurity",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Introduction to Cloud Computing. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "Daniel Wilson",
+      "price": "68.62",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "AWS Fundamentals",
+      "category": "AI",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on AWS Fundamentals. It covers all the key concepts and hands-on projects.",
+      "duration": "5 weeks",
+      "instructor": "Isabella Moore",
+      "price": "139.56",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Docker and Kubernetes Essentials",
+      "category": "AI",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Docker and Kubernetes Essentials. It covers all the key concepts and hands-on projects.",
+      "duration": "9 weeks",
+      "instructor": "Michael Brown",
+      "price": "274.68",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "DevOps Practices and CI/CD",
+      "category": "Blockchain",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on DevOps Practices and CI/CD. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Olivia Taylor",
+      "price": "69.53",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Web Development with HTML & CSS",
+      "category": "Web Development",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Web Development with HTML & CSS. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Liam Thomas",
+      "price": "216.98",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "JavaScript and DOM Manipulation",
+      "category": "Blockchain",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on JavaScript and DOM Manipulation. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "Liam Thomas",
+      "price": "168.85",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "React.js: From Zero to Hero",
+      "category": "Machine Learning",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on React.js: From Zero to Hero. It covers all the key concepts and hands-on projects.",
+      "duration": "9 weeks",
+      "instructor": "Emily Johnson",
+      "price": "274.0",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Node.js API Development",
+      "category": "Blockchain",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Node.js API Development. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "James Anderson",
+      "price": "298.3",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Full-Stack Web Development",
+      "category": "Machine Learning",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Full-Stack Web Development. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "Michael Brown",
+      "price": "146.06",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Mobile App Development with Flutter",
+      "category": "Mobile Development",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Mobile App Development with Flutter. It covers all the key concepts and hands-on projects.",
+      "duration": "4 weeks",
+      "instructor": "Emily Johnson",
+      "price": "108.13",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Android Development with Kotlin",
+      "category": "Machine Learning",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Android Development with Kotlin. It covers all the key concepts and hands-on projects.",
+      "duration": "7 weeks",
+      "instructor": "Liam Thomas",
+      "price": "79.04",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "iOS Development with Swift",
+      "category": "Cloud",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on iOS Development with Swift. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "James Anderson",
+      "price": "295.95",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Software Engineering Principles",
+      "category": "UI/UX",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Software Engineering Principles. It covers all the key concepts and hands-on projects.",
+      "duration": "10 weeks",
+      "instructor": "John Smith",
+      "price": "158.43",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Data Structures and Algorithms",
+      "category": "Machine Learning",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Data Structures and Algorithms. It covers all the key concepts and hands-on projects.",
+      "duration": "12 weeks",
+      "instructor": "Michael Brown",
+      "price": "96.61",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Competitive Programming",
+      "category": "Blockchain",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Competitive Programming. It covers all the key concepts and hands-on projects.",
+      "duration": "4 weeks",
+      "instructor": "Emma White",
+      "price": "87.96",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Introduction to Cybersecurity",
+      "category": "DevOps",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Introduction to Cybersecurity. It covers all the key concepts and hands-on projects.",
+      "duration": "10 weeks",
+      "instructor": "John Smith",
+      "price": "88.94",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Ethical Hacking: Penetration Testing",
+      "category": "Programming",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Ethical Hacking: Penetration Testing. It covers all the key concepts and hands-on projects.",
+      "duration": "10 weeks",
+      "instructor": "James Anderson",
+      "price": "71.91",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Blockchain Basics",
+      "category": "Mobile Development",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Blockchain Basics. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "James Anderson",
+      "price": "216.14",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "UI/UX Design Fundamentals",
+      "category": "Data Science",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on UI/UX Design Fundamentals. It covers all the key concepts and hands-on projects.",
+      "duration": "9 weeks",
+      "instructor": "John Smith",
+      "price": "109.22",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Product Management Essentials",
+      "category": "UI/UX",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Product Management Essentials. It covers all the key concepts and hands-on projects.",
+      "duration": "7 weeks",
+      "instructor": "James Anderson",
+      "price": "180.21",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Project Management with Agile",
+      "category": "Blockchain",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Project Management with Agile. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "Emma White",
+      "price": "298.36",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Excel for Data Analysis",
+      "category": "Machine Learning",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Excel for Data Analysis. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Daniel Wilson",
+      "price": "205.7",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Tableau for Data Visualization",
+      "category": "DevOps",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Tableau for Data Visualization. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "Sophia Davis",
+      "price": "79.49",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Power BI Dashboards",
+      "category": "Cybersecurity",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Power BI Dashboards. It covers all the key concepts and hands-on projects.",
+      "duration": "12 weeks",
+      "instructor": "Michael Brown",
+      "price": "224.9",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Time Series Analysis and Forecasting",
+      "category": "Mobile Development",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Time Series Analysis and Forecasting. It covers all the key concepts and hands-on projects.",
+      "duration": "10 weeks",
+      "instructor": "Olivia Taylor",
+      "price": "206.01",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Speech Recognition and Processing",
+      "category": "Programming",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Speech Recognition and Processing. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "Liam Thomas",
+      "price": "141.41",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "AR/VR Development Basics",
+      "category": "Machine Learning",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on AR/VR Development Basics. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Michael Brown",
+      "price": "263.96",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Internet of Things (IoT) Fundamentals",
+      "category": "Data Science",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Internet of Things (IoT) Fundamentals. It covers all the key concepts and hands-on projects.",
+      "duration": "8 weeks",
+      "instructor": "Emily Johnson",
+      "price": "125.09",
+      "language": "Hindi",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Robotics: Introduction to Control",
+      "category": "Machine Learning",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Robotics: Introduction to Control. It covers all the key concepts and hands-on projects.",
+      "duration": "7 weeks",
+      "instructor": "John Smith",
+      "price": "263.35",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Quantum Computing Principles",
+      "category": "Web Development",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Quantum Computing Principles. It covers all the key concepts and hands-on projects.",
+      "duration": "5 weeks",
+      "instructor": "Isabella Moore",
+      "price": "83.94",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Ethical AI Foundations",
+      "category": "Programming",
+      "level": "Advanced",
+      "description": "This is a comprehensive course on Ethical AI Foundations. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Liam Thomas",
+      "price": "254.33",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Data Engineering with ETL Pipelines",
+      "category": "Data Science",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on Data Engineering with ETL Pipelines. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Emily Johnson",
+      "price": "120.21",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "MLOps: Deploying ML Models",
+      "category": "Cybersecurity",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on MLOps: Deploying ML Models. It covers all the key concepts and hands-on projects.",
+      "duration": "11 weeks",
+      "instructor": "Daniel Wilson",
+      "price": "83.31",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Model Interpretability and Explainability",
+      "category": "DevOps",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Model Interpretability and Explainability. It covers all the key concepts and hands-on projects.",
+      "duration": "4 weeks",
+      "instructor": "Olivia Taylor",
+      "price": "238.7",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "System Design Interview Prep",
+      "category": "Machine Learning",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on System Design Interview Prep. It covers all the key concepts and hands-on projects.",
+      "duration": "4 weeks",
+      "instructor": "Olivia Taylor",
+      "price": "188.65",
+      "language": "English",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Capstone: Build a Real-World ML App",
+      "category": "Machine Learning",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Capstone: Build a Real-World ML App. It covers all the key concepts and hands-on projects.",
+      "duration": "6 weeks",
+      "instructor": "Emma White",
+      "price": "257.71",
+      "language": "French",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Game Development with Unity",
+      "category": "Web Development",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Game Development with Unity. It covers all the key concepts and hands-on projects.",
+      "duration": "12 weeks",
+      "instructor": "Michael Brown",
+      "price": "254.96",
+      "language": "Spanish",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "API Development with Django",
+      "category": "Cloud",
+      "level": "Intermediate",
+      "description": "This is a comprehensive course on API Development with Django. It covers all the key concepts and hands-on projects.",
+      "duration": "10 weeks",
+      "instructor": "Olivia Taylor",
+      "price": "178.47",
+      "language": "German",
+      "grade": ""
+    }
+  },
+  {
+    "model": "myapp.course",
+    "fields": {
+      "title": "Cybersecurity for Beginners",
+      "category": "Web Development",
+      "level": "Beginner",
+      "description": "This is a comprehensive course on Cybersecurity for Beginners. It covers all the key concepts and hands-on projects.",
+      "duration": "12 weeks",
+      "instructor": "John Smith",
+      "price": "66.54",
+      "language": "English",
+      "grade": ""
+    }
+  }
+]
